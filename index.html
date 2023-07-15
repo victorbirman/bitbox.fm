@@ -12,9 +12,7 @@
   </head>
   <body>
     <nav>
-      <a class="logo" href="https:www.bitbox.fm"
-        ><img src="media/bitbox_logo.png" alt=""
-      /></a>
+      <a class="logo" href="#"><img src="media/bitbox_logo.png" /></a>
       <ul>
         <li>
           <a
@@ -25,7 +23,7 @@
 
         <li><a href="mailto:info@bitbox.fm">Contacto</a></li>
         <li>
-          <a href="#" onclick="dropdownToggle()"
+          <a href="#" onmouseover="dropdownToggle()"
             >Redes
             <div
               onmouseleave="dropdownHide()"
@@ -50,9 +48,10 @@
           </a>
         </li>
       </ul>
-      <button class="radio" onclick="playAudio()">EN VIVO</button>
+      <button class="radio" onclick="playAudio()">&#9654; EN VIVO</button>
     </nav>
     <video
+      onclick="dropdownHide()"
       src="media/bitbox_wallpaper_720.mp4"
       autoplay
       loop
@@ -61,7 +60,7 @@
     ></video>
 
     <footer>
-      <p class="logo">Un producto de Sideral Media S.A.</p>
+      <p class="logo sideral">Un producto de Sideral Media S.A.</p>
       <ul>
         <li>
           <a href="https://www.instagram.com/bitbox.fm/"

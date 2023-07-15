@@ -105,9 +105,10 @@ footer a {
 
 @media (orientation: portrait) {
     
-    ul {
+    ul, .sideral {
         display: none;
     }
+ 
 }
 
 a:hover {
