@@ -17,7 +17,7 @@ function playAudio() {
     }
   } else {
     audioPlayer.pause();
-    audioDiv.innerHTML = "&#9654; EN VIVO";
+    audioDiv.innerHTML = "&#9658; EN VIVO";
   }
 }
 function dropdownToggle() {
