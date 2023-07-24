@@ -4,7 +4,7 @@
 }
 * {
 box-sizing: border-box;
-font-family: knockout-sumo, Arial, Helvetica, sans-serif;
+font-family: "knockout-sumo", Arial, Helvetica, sans-serif;
 
 }
 
@@ -38,7 +38,7 @@ video {
 
 button {
     cursor: pointer;
-    z-index: 99;
+    z-index: 999;
     border-radius: 15px;
     background-color: black;
     color: white;
@@ -55,7 +55,7 @@ button {
 
 
 
-ul {
+.top-menu, .redes-icons {
     
     border: 0px;
     display: flex;
@@ -63,7 +63,7 @@ ul {
 }
 
 
-li {
+.top-menu, .redes-icons li {
     list-style: none;
 }
 a {
@@ -103,10 +103,21 @@ footer a {
     color: white;
 }
 
-@media (orientation: portrait) {
+.hamburger  {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
     
-    ul, .sideral {
+    .top-menu {
         display: none;
+    }
+    .sideral {
+        visibility: hidden;
+    }
+
+    .hamburger {
+        display: block;
     }
  
 }
@@ -114,6 +125,13 @@ footer a {
 a:hover {
  font-weight: bold;
 }
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+  }
 
 
 
@@ -149,8 +167,28 @@ color: black;
 }
 
 
+.hamburger {
+    margin-right: 10px;
+    position: relative;
+}
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 42px;
+    right: 0px;
+    padding: 1ch;
+    background-color: #d7d7d6;
+    z-index: -1;
 
 
+}
 
+.hamburger-menu  li {
+    padding: 10px;
+}
 
+.redes-icon {
+    display: flex;
+}
 

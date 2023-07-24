@@ -13,7 +13,7 @@
   <body>
     <nav>
       <a class="logo" href="#"><img src="media/bitbox_logo.png" /></a>
-      <ul>
+      <ul class="top-menu">
         <li>
           <a
             href="https://open.spotify.com/playlist/6DxBQUDJAsIaO5YYoecoid?si=48abfaae224a46be"
@@ -49,6 +49,22 @@
         </li>
       </ul>
       <button class="radio" onclick="playAudio()">&#9658; EN VIVO</button>
+      <div class="hamburger" onclick="toggleFullMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="hamburger-menu">
+          <ul>
+            <li>
+              <a
+                href="https://open.spotify.com/playlist/6DxBQUDJAsIaO5YYoecoid?si=48abfaae224a46be"
+                >Playlists</a
+              >
+            </li>
+            <li><a href="mailto:info@bitbox.fm">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <video
       onclick="dropdownHide()"
@@ -61,7 +77,7 @@
 
     <footer>
       <p class="logo sideral">Un producto de Sideral Media S.A.</p>
-      <ul>
+      <ul class="redes-icons">
         <li>
           <a href="https://www.instagram.com/bitbox.fm/"
             ><svg
